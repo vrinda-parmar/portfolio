@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #1AB2FF;
+  --secondary-color: #8E1AFF;
+  --accent-color: #1AFF8E;
+  --success-color: #00E670;
+  --warning-color: #F5FF00;
+  --error-color: #FF2D55;
+  --tech-cyan: #00F5FF;
+  --tech-magenta: #FF00F5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+/* Neon text effect */
+.neon-text {
+  text-shadow: 0 0 5px var(--tech-cyan),
+               0 0 15px var(--tech-cyan);
+}
+
+.neon-text-strong {
+  text-shadow: 0 0 10px var(--tech-cyan),
+               0 0 30px var(--tech-cyan);
+}
+
+/* Gradient backgrounds */
+.tech-gradient {
+  background: linear-gradient(135deg, #1AB2FF 0%, #8E1AFF 100%);
+}
+
+.cyber-gradient {
+  background: linear-gradient(135deg, #00F5FF 0%, #FF00F5 100%);
+}
+
+/* Add smooth transitions for color scheme changes */
+*, *::before, *::after {
+  transition-property: background-color, border-color, color, fill, stroke, text-shadow, box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Override transition for specific elements where we don't want it */
+img, svg, video, canvas, iframe, .no-transition {
+  transition: none;
+}
