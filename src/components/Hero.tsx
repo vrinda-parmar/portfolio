@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Download } from 'lucide-react';
 
 interface HeroProps {
   darkMode: boolean;
@@ -76,6 +76,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
             >
               Get in Touch
             </a>
+
             <a 
               href="#projects" 
               className={`px-8 py-3 text-base font-medium rounded-lg border-2 transition-colors duration-300 ${
@@ -85,6 +86,16 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
               }`}
             >
               View Projects
+            </a>
+
+            {/* ✅ Download Resume Button */}
+            <a
+              href="/vrinda_parmar_resume (2).pdf"
+              download
+              className="flex items-center gap-2 px-8 py-3 text-base font-medium rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-300"
+            >
+              <Download size={18} />
+              Resume
             </a>
           </div>
         </div>

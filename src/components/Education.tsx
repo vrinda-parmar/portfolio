@@ -24,7 +24,7 @@ const educationData: EducationItem[] = [
     field: 'Computer Engineering',
     startDate: '2022',
     endDate: '2026',
-    description: ' Pursuing B.Tech in Computer Engineering (9.09 CGPA) with a strong foundation in programming, data structures, algorithms, and full stack web development, along with core subjects like Artificial Intelligence, Computer Networks, OOPs, Data Science, Software Engineering, and DBMS.',
+    description: ' Pursuing B.Tech in Computer Engineering (9.13 CGPA) with a strong foundation in programming, data structures, algorithms, and full stack web development, along with core subjects like Artificial Intelligence, Computer Networks, OOPs, Data Science, Software Engineering, and DBMS.',
     location: 'Bhiwani, Haryana'
   },
   {

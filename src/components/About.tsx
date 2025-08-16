@@ -47,7 +47,9 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
           <p className={`text-lg leading-relaxed mb-8 ${
             darkMode ? 'text-gray-300' : 'text-gray-700'
           }`}>
-           I'm a passionate software engineer currently in the final year of my B.Tech in Computer Engineering, with a strong interest in building web applications and digital experiences. My journey in technology began during my college years, where I discovered my love for problem-solving and creating impactful digital products
+          I’m Vrinda Parmar, a Computer Engineering student specializing in Web Development and Data Structures & Algorithms (DSA). I have hands-on experience with the MERN stack and enjoy developing efficient, scalable, and user-friendly applications.
+
+My interests extend to Artificial Intelligence and Machine Learning, where I explore innovative ways to integrate AI with web technologies. I am passionate about problem-solving, continuous learning, and building impactful solutions that address real-world challenges.
           </p>
           
           <p className={`text-lg leading-relaxed mb-12 ${
@@ -67,7 +69,7 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
               },
               {
                 icon: <GraduationCap size={32} className="text-blue-500" />,
-                title: 'Continuous Learning',
+                title: 'Artificial Intelligence',
                 description: 'Constantly improving my skills and exploring new technologies'
               },
               {

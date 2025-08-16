@@ -1,5 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import { Calendar, ExternalLink } from 'lucide-react';
+import aiCert from '../Assets/ai.jpg';
+import clang from '../Assets/c.jpg';
+import full from '../Assets/full.jpg';
+import info from '../Assets/info.jpg';
+import code from '../Assets/codewar.jpg';
+
 
 
 interface CertificationsProps {
@@ -23,16 +29,27 @@ const certificationsData: Certification[] = [
     organization: 'LinkedIn Learning',
     date: 'Jan 2025',
     description: 'Completed a comprehensive course on Generative AI, gaining hands-on experience with advanced models for text, image, and code generation.',
-    logo: 'https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    logo: aiCert
     
+
   },
+   {
+    id: 5,
+    title: 'Codewar Participation Certificate',
+    organization: 'The Technological Institute of textile & Sciences, Bhiwani',
+    date: 'April 2025',
+    description: 'Participated in CodeWar, a college-level coding competition, demonstrating problem-solving skills and competitive programming proficiency.',
+    logo: code
+   
+  },
+
   {
     id: 2,
     title: 'Master Course in Full Stack Development',
     organization: 'Great Learning ',
     date: 'June 2024',
     description: 'Completed a Master Course in Full Stack Web Development using the MERN stack (MongoDB, Express.js, React, Node.js) with practical project implementation.',
-    logo: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    logo: full
     
   },
   {
@@ -41,7 +58,7 @@ const certificationsData: Certification[] = [
     organization: 'Logicpro Infosystems',
     date: 'March 2024',
     description: 'Completed a Web Designing Frontend Course focused on HTML, CSS, JavaScript, and responsive UI development for modern web applications.',
-    logo: 'https://images.pexels.com/photos/1181279/pexels-photo-1181279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    logo: info
     
   },
   {
@@ -50,19 +67,9 @@ const certificationsData: Certification[] = [
     organization: 'The Technological Institute of textile & Sciences, Bhiwani',
     date: 'August 2022',
     description: 'Completed a C Programming course covering fundamentals, data structures, and problem-solving through hands-on coding practice.',
-    logo: 'https://images.pexels.com/photos/1181307/pexels-photo-1181307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    
-  },
-  {
-    id: 5,
-    title: 'Codewar Participation Certificate',
-    organization: 'The Technological Institute of textile & Sciences, Bhiwani',
-    date: 'April 2025',
-    description: 'Participated in CodeWar, a college-level coding competition, demonstrating problem-solving skills and competitive programming proficiency.',
-    logo: 'https://images.pexels.com/photos/1181359/pexels-photo-1181359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-   
-  },
-
+    logo: clang
+  }
+ 
 ];
 
 const Certifications: React.FC<CertificationsProps> = ({ darkMode }) => {
